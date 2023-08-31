@@ -1,0 +1,435 @@
+/* Paleta de colores */
+#PALETA_DE_COLORES {
+   color: #66a5ad, #c2d7dd, #aad6e3, #a3c4bc, #829995;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  background-color: #c2d7dd;
+  color: #000000;
+}
+  
+  
+  /* #region HEADER */
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    background: #66a5ad;
+  
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 6px 8px rgba(0,0,0, 0.10);
+  
+    z-index: 1;
+  }
+  
+  #logo,
+  #contacto {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+  }
+  
+  #logo,
+  #contacto > img {
+    width: auto;
+    padding: 5px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: 1.25rem;
+  }
+  
+  nav ul {
+    list-style: none;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    padding: 1rem 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  nav li:hover,
+  #contacto:hover {
+    background-color: #2e828d;
+    border-radius: 8px;
+  }
+  
+  /* #endregion */
+  
+  
+  /* #region SECCIONES EN GENERAL */
+  
+  section {
+    scroll-margin-top:  90px;
+    padding: 45px 90px;
+  }
+  
+  /* tmp: en lo que se termina el resto de las secciones,
+          para visualizar secciones  */
+  section:not(#top-canciones, #artistas-destacados, #proximos-conciertos,#eventos) {
+    height: 100vh;
+    border: 1px dashed black;
+  }
+  
+  section > h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #76bdb1;
+  
+    border-bottom: 5px solid #8dd1da ;
+    margin-bottom: 2rem;
+  }
+  
+  section#top-canciones {
+    background-image: linear-gradient(90deg, hsl(177, 23%, 18%), hsl(184, 52%, 43%));
+  }
+  
+  /* #endregion */
+  
+  
+  /* #region HOME */
+  
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background: url("../img/home.jpeg") no-repeat center center fixed;
+    background-size: cover;
+  
+    color: floralwhite;
+  
+    height: 100vh;
+  }
+  
+  .home-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+    background-color: #52a3ad;
+    opacity: 0.9;
+    padding: 3rem;
+  }
+  
+  /* #endregion */
+  
+  
+  /* #region DESTACADOS */
+/* Estilos para la sección Top de Canciones */
+#top-canciones {
+  background-image: linear-gradient(90deg, #66a5ad, #0f5058);
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Contenedor para las canciones */
+.top-canciones-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para cada canción */
+.cancion {
+  flex: 0 0 calc(20% - 30px); /* 5 canciones por fila */
+  text-align: center;
+  background-color: #66a5ad;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cancion:hover {
+  transform: translateY(-5px);
+}
+
+.cancion img {
+  width: 100%; /* Imágenes tendrán ancho 100% */
+  height: 150px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajuste de la imagen para cubrir el área */
+  border-radius: 8px;
+}
+
+.star-rating {
+  color: gold;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.cancion h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.cancion p {
+  color: white;
+  margin-bottom: 10px;
+}
+
+  
+  .destacados-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 60px;
+  }
+  
+  .destacado-info {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+    border-radius: 3px;
+  }
+  
+  .destacado-info img {
+    max-width: 100%;
+  }
+  
+  .star-rating {
+    color: gold;
+    font-size: 1.5rem;
+  }
+  
+ /* Sección de Artistas Destacados */
+#artistas-destacados {
+  background-color: #f5f7fa;
+  padding: 80px 0;
+}
+
+#artistas-destacados h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2e828d;
+  margin-bottom: 30px;
+}
+
+#artistas-destacados p {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.artistas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Estilos para cada artista */
+.artista {
+  flex: 0 0 calc(33.33% - 30px); /* 3 artistas por fila */
+  text-align: center;
+  background-color: #66a5ad;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.artista:hover {
+  transform: translateY(-5px);
+}
+
+.artista img {
+  width: 100%;
+  height: 200px; /* Tamaño fijo para las fotos de los artistas */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.artista h3 {
+  color: #0955a1;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.artista p {
+  color: #555;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.comentarios-artista {
+  margin-top: 20px;
+}
+
+.comentarios-artista p {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+  
+  .cliente img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .cliente-mensaje {
+    flex: 1;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cliente-firma {
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  /* #endregion */
+  
+  
+  /* #region MODELOS */
+  
+  .card-container {
+    display: flex;
+  }
+  
+  .card {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    background: #f5f7fa;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 3px;
+  }
+  
+  .card h3 {
+    margin-bottom:  10px;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+    color:#555
+  }
+  
+  button.btn {
+    cursor: pointer;
+  
+    background-color: #34495e;
+    color: #ffffff;
+    font-size: 1.25rem;
+  
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+  
+    border: none;
+  
+    border-radius: 21px;
+    transition: color 0.5s;
+  }
+  
+  button.btn:hover {
+    background-color: #5fbaa7;
+  }
+  
+  /* #endregion */
+  
+  
+  /* #region GALERIA */
+  .galeria-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  
+  .galeria-img {
+    max-width: 400px;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  /* #endregion */
+  
+  
+  /* #region FOOTER */
+  
+  footer {
+    background: #3498db;
+    height: 50vh;
+  }
+  
+  /* #endregion */
+  
+  
+  /* #region BOTON IR ARRIBA */
+  
+  #btn-ir-arriba {
+    display: none;
+    cursor: pointer;
+  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    background: hsl(210, 29%, 29%);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+  
+    box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
+    transition: 300ms ease;
+  }
+  
+  #btn-ir-arriba:hover {
+    background: hsl(210, 29%, 24%);
+    transform: translateY(-0.5rem);
+  }
+  
+  #btn-ir-arriba svg {
+    width: 25px;
+    fill: none;
+    stroke: white;
+    stroke-width: 3px;
+  }

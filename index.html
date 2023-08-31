@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/main.js"></script>
+  <title>Desarolladores ISI</title>
+</head>
+<body>
+
+  <header>
+
+    <a id="logo" onclick="mostrarMensajeInicial()">
+      <img src="./img/logo.png" title="Logo app">
+    </a>
+
+    <nav>
+
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#top-canciones">Top de Canciones</a></li> 
+        <li><a href="#artistas-destacados">Artistas Destacados</a></li> 
+        <li><a href="#proximos-conciertos">Próximos Conciertos</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+      </ul>
+
+    </nav>
+
+    <a id="contacto" href="#footer">
+      <img src="./img/contacto.png" title="Contactanos">
+    </a>
+
+  </header>
+
+  <main>
+
+    <section id="home">
+      <div class="home-banner">
+        <h1>Bienvenido a Play&amp;Sing Radio</h1>
+        <p>Tu estación de música favorita</p>
+      </div>
+    </section>
+
+    <section id="top-canciones">
+      <h1>Top de Canciones</h1>
+    
+      <div class="top-canciones-container">
+        <div class="cancion">
+          <img src="./img/canciones/cancion1.jpg" alt="Canción 1">
+          <h3>Still Breathing</h3>
+          <h4>Green Day</h4>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        
+        <div class="cancion">
+          <img src="./img/canciones/cancion2.jpg" alt="Canción 2">
+          <h3>Azul</h3>
+          <h4>Zoe</h4>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        
+        <div class="cancion">
+          <img src="./img/canciones/cancion3.jpg" alt="Canción 3">
+          <h3>Hype Boy 3</h3>
+          <h4>New Jeans</h4>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        
+        <div class="cancion">
+          <img src="./img/canciones/cancion4.jpg" alt="Canción 4">
+          <h3>El baile y el salón</h3>
+          <h4>tacvba</h4>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        
+        <div class="cancion">
+          <img src="./img/canciones/cancion5.jpg" alt="Canción 5">
+          <h3>Sunshine</h3>
+          <h4>OneRepublic</h4>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Sección de Artistas Destacados -->
+<section id="artistas-destacados">
+  <h1>Artistas Destacados</h1>
+  <p>Descubre a los artistas más destacados en Play&amp;Sing Radio.</p>
+
+  <div class="artistas-container">
+
+    <div class="artista">
+      <img src="./img/artistas/artista1.jpg" alt="Artista 1">
+      <h3>Artista 1</h3>
+      <p>Descripción del Artista 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="artista">
+      <img src="./img/artistas/artista2.jpg" alt="Artista 2">
+      <h3>Artista 2</h3>
+      <p>Descripción del Artista 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+
+    <div class="artista">
+      <img src="./img/artistas/artista3.jpg" alt="Artista 3">
+      <h3>Artista 3</h3>
+      <p>Descripción del Artista 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+  </div>
+
+  
+
+</section>
+
+
+    <!-- Sección de Próximos Conciertos -->
+    <section id="proximos-conciertos">
+      <h1>Próximos Conciertos</h1>
+      <p>Descubre los emocionantes conciertos que están por venir.</p>
+      <!-- Agrega aquí los detalles de los próximos conciertos -->
+    </section>
+
+    <!-- Sección de Eventos -->
+    <section id="eventos">
+      <h1>Eventos</h1>
+      <p>Explora los eventos especiales que tenemos preparados para ti.</p>
+      <!-- Agrega aquí los detalles de los eventos -->
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <h1>Formulario de contactos</h1>
+    <h3>Contactis adicionales | Redes sociales</h3>
+    <p>Desarrollares e inmobiliarios ISI &copy; 2023</p>
+  </footer>
+
+  <button id="btn-ir-arriba" >
+    <svg viewBox="0 0 24 24">
+      <path d="m4 16 8-8 8 8"></path>
+    </svg>
+  </button>
+
+</body>
+</html>
