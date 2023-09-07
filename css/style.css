@@ -373,34 +373,126 @@ body {
   }
   
   /* #endregion */
-  
-  
-  /* #region GALERIA */
-  .galeria-container {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-  }
-  
-  .galeria-img {
-    max-width: 400px;
-    padding: 1rem;
-    margin: 1rem;
-    cursor: pointer;
-  }
-  /* #endregion */
-  
-  
+/* Estilos para la sección de próximos conciertos */
+#proximos-conciertos {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #3c6166; /* Color de fondo personalizado */
+  padding: 20px;
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+#proximos-conciertos h1 {
+  font-size: 24px;
+  color: #ffffff; /* Color de título personalizado */
+}
+
+#proximos-conciertos p {
+  font-size: 16px;
+  color: #ffffff; /* Color de texto personalizado */
+}
+
+/* Estilos para los conciertos */
+.conciertos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.concierto {
+  width: 250px;
+  padding: 20px;
+  background-color: #66a5ad;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.concierto:hover {
+  transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+}
+
+/* Estilos para la sección de Eventos */
+#eventos {
+  background-color: #f4f4f4; /* Color de fondo */
+  padding: 40px;
+  text-align: center;
+}
+
+#eventos h1 {
+  font-size: 28px;
+  color: #333; /* Color de título personalizado */
+  margin-bottom: 10px;
+}
+
+#eventos p {
+  font-size: 16px;
+  color: #000000; /* Color de texto personalizado */
+  margin-bottom: 20px;
+}
+
+/* Estilos para los detalles de los eventos */
+.evento {
+  background: linear-gradient(to bottom, #a0c8e0, #ffffff); /* Fondo degradado de azul a blanco */
+  padding: 20px;
+  border: 1px solid #ccc; /* Borde alrededor del elemento */
+  border-radius: 5px; /* Borde redondeado */
+  margin-bottom: 20px;
+}
+
+.evento h2 {
+  font-size: 20px;
+  color: #000000; /* Color de título del evento */
+}
+
+.evento p {
+  font-size: 16px;
+  color: #000000; /* Color de texto del evento */
+}
+
   /* #region FOOTER */
   
   footer {
-    background: #3498db;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background: #66a5ad;
+    color:white;
+    text-align: center;
     height: 50vh;
+    padding: 6rem 3rem;
   }
   
-  /* #endregion */
+  .contacto-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
   
+  #contacto-form {
+    width: 600px;
+    max-width: 100%;
+  }
   
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    padding: 8px;
+    border: 1px solid #f5f7fa;
+    border-radius: 3px;
+  }
+    
   /* #region BOTON IR ARRIBA */
   
   #btn-ir-arriba {
@@ -411,7 +503,7 @@ body {
     bottom: 20px;
     right: 20px;
   
-    background: hsl(210, 29%, 29%);
+    background: hsl(210, 39%, 58%);
     color: white;
     height: 50px;
     width: 50px;
